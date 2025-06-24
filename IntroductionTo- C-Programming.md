@@ -1,6 +1,6 @@
-## Introduction To C- Programming
+# **Introduction To C- Programming**
 C is a powerful, general-purpose programming language developed by Dennis Ritchie in the early 1970s at Bell Labs. It is known for its speed, efficiency, and close-to-hardware capabilities, making it ideal for system programming, such as operating systems and embedded systems. C provides low-level memory access, a simple set of keywords, and a clean style, making it a popular choice for beginners and professionals alike. Its influence can be seen in many modern languages like C++, Java, and Python.
-## **1. Basic Elements**
+# **Basic Elements**
 The Elements which are used for the programming in C or any other language these elements are used to write the code in the specific language which can be same in all the languages like C++, Java, etc,.. The following Elements are explained based on the C Programming language. The Following are the **Basic Elements** in C programming language.
   1. **Character Set** : Character Set are Used to write C programming and they are Divided into **Four** types.
   2. **Identifiers** : Identifiers are the names of the words that are *pre-determined | User-defined*
@@ -13,6 +13,7 @@ The Elements which are used for the programming in C or any other language these
 
 # 1.Character Set
 Character Set are Used to write C programming and they are Divided into **Four** types. The Four Catagories in character set are as Follows:
+## **Printable Character Set**
 - **Alphabet** : Alphabets are the characters used in the Character Set which can be Both Lower and Upper Case [a-z = a-97, b-98, ...] [A-Z = A-65, B-66, ...]. These are having their Corresponding **ASCII(American Standard Code Information Interchange)** values.
 
 | Dec | Char | Description            | Dec | Char | Description   | Dec | Char | Description   |
@@ -61,8 +62,76 @@ Character Set are Used to write C programming and they are Divided into **Four**
 | 41  | )    | Right parenthesis      | 84  | T    | Uppercase T   | 127 | DEL  | Delete        |
 | 42  | \*   | Asterisk               | 85  | U    | Uppercase U   |     |      |               |
 
+- **Numerics** : The integer values are the numbers are also called as Character set in which these Numerics are also having the corresponding **ASCII** values.
 
--**Numerics** : The integer values are the numbers are also called as Character set in which these Numerics are also having the corresponding **ASCII** values.
+| Char | ASCII Decimal | Binary   | Hex  | Description |
+| ---- | ------------- | -------- | ---- | ----------- |
+| 0    | 48            | 00110000 | 0x30 | Digit 0     |
+| 1    | 49            | 00110001 | 0x31 | Digit 1     |
+| 2    | 50            | 00110010 | 0x32 | Digit 2     |
+| 3    | 51            | 00110011 | 0x33 | Digit 3     |
+| 4    | 52            | 00110100 | 0x34 | Digit 4     |
+| 5    | 53            | 00110101 | 0x35 | Digit 5     |
+| 6    | 54            | 00110110 | 0x36 | Digit 6     |
+| 7    | 55            | 00110111 | 0x37 | Digit 7     |
+| 8    | 56            | 00111000 | 0x38 | Digit 8     |
+| 9    | 57            | 00111001 | 0x39 | Digit 9     |
 
+- **Special Symbols** : The Special Characters are the characters which can be used for the Character set. These Special Symbols are also having the corresponding ASCII values.
+
+| Char | ASCII | Description       | Char | ASCII | Description          |
+| ---- | ----- | ----------------- | ---- | ----- | -------------------- |
+| !    | 33    | Exclamation mark  | :    | 58    | Colon                |
+| "    | 34    | Double quote      | ;    | 59    | Semicolon            |
+| #    | 35    | Number sign       | <    | 60    | Less-than sign       |
+| \$   | 36    | Dollar sign       | =    | 61    | Equal sign           |
+| %    | 37    | Percent sign      | >    | 62    | Greater-than sign    |
+| &    | 38    | Ampersand         | ?    | 63    | Question mark        |
+| '    | 39    | Single quote      | @    | 64    | At symbol            |
+| (    | 40    | Left parenthesis  | \[   | 91    | Left square bracket  |
+| )    | 41    | Right parenthesis | \\   | 92    | Backslash            |
+| \*   | 42    | Asterisk          | ]    | 93    | Right square bracket |
+| +    | 43    | Plus sign         | ^    | 94    | Caret                |
+| ,    | 44    | Comma             | \_   | 95    | Underscore           |
+| -    | 45    | Hyphen or minus   | \`   | 96    | Grave accent         |
+| .    | 46    | Period or dot     | {    | 123   | Left curly brace     |
+| /    | 47    | Slash or divide   | \|   | 124   | Vertical bar (pipe)  |
+|      |       |                   | }    | 125   | Right curly brace    |
+|      |       |                   | \~   | 126   | Tilde                |
+
+  
+## **Non-Printable Character Set**
+These are the Non printable charaters which will be used only for the **Cursor** Changes.
+- **Escape Sequence** : These are the Combination of Alphabet and Numberics. They are mainly **six** Escape Sequence Characters. These are not treated as two characters, they are treated as single character. Most of the escape sequence are used in *printf()*. Escape Sequences are used to cgange or alter the position of the cursor they are non printable characters.
+  - ``` \n ``` : Used for the Cursor to move to the Next Line ( Line Feed ).
+  - ``` \r ``` : Used to Shift the Cursor from the Starting Position of the same line (replace) ( Carrage return ).
+  - ``` \b ``` : Used to move Cursor *one position back* or *Back Space*.
+  - ``` \t ``` : Used to get a *Tab Space* or Four spaces and start the cursor after the Tab space.
+  - ``` \a ``` : Used for the *Alert* Sound when the Cursor reaches to this Escape Sequence.
+  - ``` \0 ``` : Used for the *String Termination*.
+
+| Escape Seq | Meaning             | ASCII Value | ASCII Name        |
+| ---------- | ------------------- | ----------- | ----------------- |
+| `\n`       | New line            | 10          | LF (Line Feed)    |
+| `\r`       | Carriage return     | 13          | CR (Carriage Ret) |
+| `\t`       | Horizontal tab      | 9           | TAB               |
+| `\v`       | Vertical tab        | 11          | VT (Vertical Tab) |
+| `\b`       | Backspace           | 8           | BS (Backspace)    |
+| `\f`       | Form feed           | 12          | FF (Form Feed)    |
+| `\a`       | Alert / Bell        | 7           | BEL (Bell)        |
+| `\\`       | Backslash (`\`)     | 92          | Backslash         |
+| `\'`       | Single quote (`'`)  | 39          | Apostrophe        |
+| `\"`       | Double quote (`"`)  | 34          | Quote             |
+| `\?`       | Question mark (`?`) | 63          | Question mark     |
+| `\0`       | Null character      | 0           | NUL (Null)        |
+
+# 2.Identifiers
+The Identifiers are the user defined words. These are having two different types
+- Predefined words.
+- User Defined words.
+
+```c
+int val; // int : predefined word, val : User defined word
+```
  
  
