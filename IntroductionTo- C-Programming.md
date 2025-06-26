@@ -182,7 +182,44 @@ In C programming, keywords are reserved words that have predefined meanings and 
 | `unsigned` | `void`     | `volatile` | `while`  |
 
 # 4. Data Types
-In C programming, data types define the type of data a variable can hold. They help the compiler allocate appropriate memory and perform valid operations on the data. The basic data types in C are categorized into primary (or fundamental), derived, and user-defined types. The fundamental types include ```int``` for integers, ```float``` for single-precision floating-point numbers, ```double``` for double-precision floating-point numbers, char for characters, and void for representing no value. Derived types include ```arrays```, ```pointers```, functions, and structures, while user-defined types can be created using ```struct```, ```union```, ```enum```, and ```typedef```. Each data type has a specific size and range, which may vary depending on the system architecture. Choosing the correct data type is important for efficient memory usage and accurate results in a program.
+In C programming, data types define the type of data a variable can hold. They help the compiler allocate appropriate memory and perform valid operations on the data. The basic data types in C are categorized into primary (or fundamental), derived, and user-defined types. The fundamental types include ```int``` for integers, ```float``` for single-precision floating-point numbers, ```double``` for double-precision floating-point numbers, char for characters, and void for representing no value. Derived types include ```arrays```, ```pointers```, functions, and structures, while user-defined types can be created using ```struct```, ```union```, ```enum```, and ```typedef```. Each data type has a specific size and range, which may vary depending on the system architecture. Choosing the correct data type is important for efficient memory usage and accurate results in a program. The datatype tell us that how many bytes are corresponding variable occupies and What type of data is stored in the corresponding variable. The functions ```printf()``` uses format specifiers to get type and the size of the data ```% + conversion specification character```. We can store integer values in a character variable but with in the specific range which are called as **Sign Qualifier**.
+The Data types are divided into two different types 
+
+- Primitive DataTypes : ```int```, ```char```,```short```,```float```, etc,...
+- Non-Primitive DataTypes : ```Arrays```,```Structures```,```Unions```.
+
+## **1. Basic (Primary) Data Types**
+
+| Data Type | Description                                     | Example             |
+| --------- | ----------------------------------------------- | ------------------- |
+| `int`     | Stores integers                                 | `int a = 10;`       |
+| `float`   | Stores decimal numbers (single precision)       | `float b = 3.14;`   |
+| `double`  | Stores decimal numbers (double precision)       | `double c = 5.678;` |
+| `char`    | Stores single characters                        | `char ch = 'A';`    |
+| `void`    | Represents absence of value (used in functions) | `void show();`      |
+
+## **2. Derived Data Types**
+
+| Type       | Description                             |
+| ---------- | --------------------------------------- |
+| Arrays     | Collection of elements of the same type |
+| Pointers   | Store address of another variable       |
+| Functions  | Block of code that performs a task      |
+| References | (Not in C, only in C++)                 |
+
+## **3. User-defined Data Types**
+
+| Keyword   | Description                                |
+| --------- | ------------------------------------------ |
+| `struct`  | Groups variables of different data types   |
+| `union`   | Similar to struct but shares memory        |
+| `enum`    | Used to assign names to integral constants |
+| `typedef` | Creates alias for data types               |
+
+
+
+
+
 
 
 
