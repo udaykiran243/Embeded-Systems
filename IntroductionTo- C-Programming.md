@@ -126,6 +126,7 @@ These are the Non printable charaters which will be used only for the **Cursor**
 | `\0`       | Null character      | 0           | NUL (Null)        |
 
 # 2.Identifiers
+In C programming, identifiers are the names used to represent various program elements such as variables, functions, arrays, structures, and more. They are created by the programmer to make the code readable and meaningful. An identifier must begin with a letter ```(A–Z or a–z)``` or an underscore (_) and can be followed by letters, digits ```0–9```, or underscores. Identifiers are case-sensitive, meaning total and Total are treated as different names. However, they cannot be the same as C keywords like ```int```, ```return```, or ```while```. Choosing clear and descriptive identifiers is essential for writing clean and maintainable code.
 The Identifiers are the user defined words. These are having two different types
 - Predefined words.
 - User Defined words.
@@ -133,5 +134,102 @@ The Identifiers are the user defined words. These are having two different types
 ```c
 int val; // int : predefined word, val : User defined word
 ```
+## Rules for naming an identifier 
+- Identifier names can contain alphabets, numerics only one special symbol. ```( _ )```
+- Identifier names can start with alphabets or underscore ( _ ) but cannot start with numeric.
+- Identifier names should not use keywords ( 32 keywords).
+- The C programming is a case sensitive language.
+- The Identidier name can be of any length, but the compiler will recognise only first 31 bits in 32 bit compiler, 15 bits in 16 bit compiler.
+- blank spaces are not allowed in the naming of Identifier.
+
+# 3.Keywords
+In C programming, keywords are reserved words that have predefined meanings and purposes within the language. They are used to perform various operations such as defining data types ```(int, float, char)```, controlling program flow ```(if, else, while, for)```, and handling structures and functions ```(struct, return, void)```. Since these keywords are an integral part of the language syntax, they cannot be used as identifiers like variable or function names. All keywords are written in lowercase and serve specific roles that help the compiler understand and execute the program correctly. C has a total of 32 keywords, and each plays a vital role in building the logic and structure of a program.
+
+
+| Keyword  | Purpose                                 |
+| -------- | --------------------------------------- |
+| `int`    | Declares an integer variable            |
+| `float`  | Declares a floating-point variable      |
+| `char`   | Declares a character variable           |
+| `if`     | Used for conditional statements         |
+| `else`   | Defines alternate execution path        |
+| `while`  | Used for loops                          |
+| `for`    | Another looping control                 |
+| `return` | Returns a value from a function         |
+| `void`   | Specifies no return type for a function |
+
+| Keyword    | Purpose                               |
+| ---------- | ------------------------------------- |
+| `break`    | Exits from a loop or switch           |
+| `continue` | Skips the current iteration in a loop |
+| `switch`   | Multi-way branch                      |
+| `case`     | Used inside a switch                  |
+| `default`  | Fallback case in a switch             |
+| `struct`   | Declares a structure                  |
+| `typedef`  | Creates a new name for a data type    |
+| `const`    | Declares constants                    |
+| `sizeof`   | Returns the size of a data type       |
+
+| Keywords   | Keywords   | Keywords   | Keywords |
+| ---------- | ---------- | ---------- | -------- |
+| `auto`     | `break`    | `case`     | `char`   |
+| `const`    | `continue` | `default`  | `do`     |
+| `double`   | `else`     | `enum`     | `extern` |
+| `float`    | `for`      | `goto`     | `if`     |
+| `int`      | `long`     | `register` | `return` |
+| `short`    | `signed`   | `sizeof`   | `static` |
+| `struct`   | `switch`   | `typedef`  | `union`  |
+| `unsigned` | `void`     | `volatile` | `while`  |
+
+# 4. Data Types
+In C programming, data types define the type of data a variable can hold. They help the compiler allocate appropriate memory and perform valid operations on the data. The basic data types in C are categorized into primary (or fundamental), derived, and user-defined types. The fundamental types include ```int``` for integers, ```float``` for single-precision floating-point numbers, ```double``` for double-precision floating-point numbers, char for characters, and void for representing no value. Derived types include ```arrays```, ```pointers```, functions, and structures, while user-defined types can be created using ```struct```, ```union```, ```enum```, and ```typedef```. Each data type has a specific size and range, which may vary depending on the system architecture. Choosing the correct data type is important for efficient memory usage and accurate results in a program.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
