@@ -217,8 +217,69 @@ The Data types are divided into two different types
 | `typedef` | Creates alias for data types               |
 
 
+## Memory Segments or Memory Sections
+
+```c
+int y = 25;
+int x;
+int main(){
+  int z;
+}
+```
+
+| Memory Segments Before compilation    | Discription                                                   |
+|---------------------------------------|---------------------------------------------------------------|
+|```BSS(Block Started after Symbols)``` | Stores the Global varibles which are un-initialized ```x```   |
+| ```Data Segment```                    | Stores the **Global Variables which are initialized ```y```   |
+|```Text / code Segment```              | Stores the Instructions                                       |
+
+- These segments are created before the time of **Execution**.
+- These Segments are Stored in the HardDisc where then send to the **RAM** for execution.
+- Assigning values during declaration is called initialization.
+- The memeory for the global initialized variables are present in BSS segment.
+- We cannot ise text editor to view contents of executable file we can use the **Objdump** and **readELF**.
+- During execution the program gets loaded to HardDisc to RAM.
+- After loading, few more additional segments are created , they are called **STACK** and **HEAP**.
+- When a function is called / initialized a block of memory is created called **Stack Frame**.
+- Stack and Heap are not fixed in size where stack grows Downwards(```↓```), and the Heap grows Upwards(```↑```).
+- Text, Data and BSS segments are fixed, they cannot change during execution.
+- Stack and Heap are created only when the program is loaded to RAM for execution.
+- Except text segment all other segments are read and write segments.
+- A block of area of created when a new thread is created and when the function is called stack frame is created.
+- The command Line Arguments are stored above the stack.
+- The Additional information given during execution of the program are called Command Line Arguments.
+
+  |    **Memory Segments**   | 
+  |--------------------------|
+  |**Command Line Arguments**|
+  |**Stack Frames / Stack**  |
+  |         **Heap**         |
+  |         **BSS**          |
+  |     **Data Segments**    |
+  |  **Text/Code Segment**   |
+
+  - The process of Before Compilation Memory Segment is called **PROGRAM** and the loading of data for execution is called **PROCESS**.
+  - To know or to see the process that are doing inside the system we use the following commands.
+  These commands are for the use of CLI tools.
+  ```
+  ps -ef
+  or
+  top
+  ```
+  These commands are for the use of GUI tools. This is a application in the GUI which can be inside the OS and can be 
+  ```
+  system moniter
+  ```
+  
 
 
+
+
+
+
+
+
+  
 
 
 
