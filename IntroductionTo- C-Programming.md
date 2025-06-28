@@ -270,6 +270,61 @@ int main(){
   ```
   system moniter
   ```
+  # Difference Between ps and top Commands
+    | Feature                   | `ps` (Process Status)                                  | `top` (Table of Processes)                           |
+    | ------------------------- | ------------------------------------------------------ | ---------------------------------------------------- |
+    | **Type**                  | Snapshot (one-time output)                             | Real-time, continuously updating                     |
+    | **Interactivity**         | Non-interactive                                        | Interactive (supports key commands during execution) |
+    | **Output**                | Static list of processes                               | Dynamic dashboard of processes                       |
+    | **Best Use Case**         | Scripting, logging, quick checks                       | Live system monitoring                               |
+    | **CPU/Memory Info**       | Shown (with options like `ps aux`)                     | Shown and auto-updated in real time                  |
+    | **Resource Usage**        | Very low                                               | Moderate (due to live updates)                       |
+    | **Filtering/Sorting**     | Via command-line options (e.g., `ps aux --sort=-%mem`) | Interactive (e.g., press `M` to sort by memory)      |
+    | **Custom Output**         | Highly customizable with options and flags             | Limited customization via keystrokes                 |
+    | **User-Friendliness**     | Medium (requires options for full info)                | Higher (but output can be overwhelming)              |
+    | **Scripting Suitability** | Excellent                                              | Poor (due to real-time output)                       |
+
+## Integer Types
+The Integer are the values of numerics and floating point values which can be stored in a variable. The Integer values are the numerics from ```0,1,2,3,4,5,6,7,8,9,....``` the integer types are basically divided into **Two** types and they are as follows
+- Numerics 
+- Floating Points
+## **Numerics**
+ Numerics refer to the values that can be stored in variables such as 0, 1, 2, .... These values are used in various number systems in computing. They are mainly divided into three types:
+  - **Decimal values** (`0-9`)
+    These are the standard numbers we use in everyday life. The decimal system is base-10 and uses digits from 0 to 9.
+    Example: 5, 123, 999.
+  - **Binary Values** (`0` and `1`)
+    Binary numbers use only 0s and 1s. This format is essential in machine-level operations, as it's the language computers understand.
+    Example: 1010 (binary for 10), 1101.
+⚙️ Note: You can prefix binary values with 0b in some programming languages (e.g., 0b1010).
+  - **Hexadecimal values** (prefix - `0x`)
+    Hexadecimal (or hex) is base-16 and uses digits 0–9 and letters A–F. Commonly used in memory addresses and color codes.
+    Example: 0x1A3F (hex) equals 6719 in decimal.
+  - **Octa values** (prefix - `0`)
+    Octal numbers use base-8 and digits from 0 to 7. Often used in Unix file permissions and low-level programming.
+    Example: 075 (octal), which equals 61 in decimal.
+    
+## **Floating points**
+  Floating point numbers are numbers that have a decimal point. They are used to represent real numbers, including both very large and very small values, with fractional parts. To represent larger floating point values into short we use Exponential Notations.
+  
+  | Notation Type            | Description                                                                  | Example                                                 |
+  | ------------------------ | ---------------------------------------------------------------------------- | ------------------------------------------------------- |
+  | **Normal Notation**      | Standard decimal format with digits before and after the decimal point       | `123.456`, `0.01`                                       |
+  | **Exponential Notation** | Scientific format used to represent very large/small numbers as powers of 10 | `1.23456e2` (i.e., `123.456`), `1.0e-3` (i.e., `0.001`) |
+
+  **Example of Conversion Table**
+  | Value       | Normal Notation | Exponential Notation |
+  | ----------- | --------------- | -------------------- |
+  | `123.0`     | `123.0`         | `1.23e2`             |
+  | `0.00056`   | `0.00056`       | `5.6e-4`             |
+  | `1000000.0` | `1000000.0`     | `1.0e6`              |
+  | `-0.025`    | `-0.025`        | `-2.5e-2`            |
+
+
+    
+
+
+  
   
 
 
