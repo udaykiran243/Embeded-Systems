@@ -320,6 +320,77 @@ The Integer are the values of numerics and floating point values which can be st
   | `1000000.0` | `1000000.0`     | `1.0e6`              |
   | `-0.025`    | `-0.025`        | `-2.5e-2`            |
 
+  # Standard Input/Output Library Functions
+  These functions are used in the program which are predefined in C, These functions are declaration is present in the Header files and the functions defination is not present in the header file.
+  **scanf()** : The scanf() takes two arguments one is **Format Specifier** and the other is **base address** of the memory where we want to store the data.
+
+  `scanf( " %d ", & val );` : **""** - is the control string , **%d** - Format Specifier, **&val** - base address of the memory.
+
+  - scanf() is a C Input/Output standard function.
+  - it is the moment of the data from input device to the system memory ( **RAM** ).
+  - If we are not using the `&` we get an **Segmentation Fault** | Runtime Error.
+  - According to coding Guide lines the function definations should not present in header files.
+  - The function definations are present in the library file **`libc.so`** `so` standards for **Shared Object**.
+  - Scanf() block the execution until user provides the input and hit enter.
+  - scanf() is a blocking call or it is a blocking function.
+  - The input is stored ar the base address passed as 2nd argument to scanf().
+
+## Printing integer values
+
+### Decimal
+The decimal values are one of the integer types of values which stores the values in decimal and these values starts from `0, 1, 2, 3, 4, ....` . To print these values we use the format specifiers as `%d`.
+```
+int val = 32;
+printf("%d", val); // prints the decimal value 32
+```
+
+### HexaDecimal
+The Hexadecimal values are one of the integer type values which are having preciding or the prefix values as `0x`.To print the values in Hexadecimal we use the `%x` or `%p` which prints the Hexadecimal values. These values are range from `0, 1, 2, 3, 4, 5, 6, 7, 8, a, b, c, d, e, f `.
+| Hex | Binary |
+| --- | ------ |
+| 0   | 0000   |
+| 1   | 0001   |
+| 2   | 0010   |
+| 3   | 0011   |
+| 4   | 0100   |
+| 5   | 0101   |
+| 6   | 0110   |
+| 7   | 0111   |
+| 8   | 1000   |
+| 9   | 1001   |
+| a   | 1010   |
+| b   | 1011   |
+| c   | 1100   |
+| d   | 1101   |
+| e   | 1110   |
+| f   | 1111   |
+
+  ```
+  int val;
+  printf("%x", val); // prints the Hexadecimal values without the prefix values
+  printf("%p", val); // prints the Hexadecimal values with the prefix value
+  ```
+
+### Octal
+The octal values are the integer values which are prefixed with `0` and to print the Octal values we use the `%o` and `0%o`. `0, 1, 2, 3, 4, 5, 6, 7`
+| Octal | Binary |
+| ----- | ------ |
+| 0     | 000    |
+| 1     | 001    |
+| 2     | 010    |
+| 3     | 011    |
+| 4     | 100    |
+| 5     | 101    |
+| 6     | 110    |
+| 7     | 111    |
+
+```
+int val = 073;
+printf("%o", val); // prints the value in Octal without prefix.
+printf("0%o", val); // prints the value in Octal with prefix.
+```
+
+
 
     
 
