@@ -400,14 +400,15 @@ printf("0%o", val); // prints the value in Octal with prefix.
 - we use `%f` to get the values in normal floating points notation.
 - we use `%e` to get the values in exponential notation.
 - we use `%g` to get the values in both the formats i.e, floating point notaion and expinential notation.
-  ```c
+  
+```c
   float f = 234.3;
   printf(" %f ", f); // o/p : 234.300000
   printf(" %e ", f); // o/p : 2.343000e+02
   scanf(" %f ", &f); // i/p : 24.03
   printf(" %f ", f); // o/p : 24.030000
   printf(" %e ", f); // o/p : 2.403000e+01
-  ```
+```
   
 
 
