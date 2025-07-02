@@ -339,7 +339,7 @@ The Integer are the values of numerics and floating point values which can be st
 
 ### Decimal
 The decimal values are one of the integer types of values which stores the values in decimal and these values starts from `0, 1, 2, 3, 4, ....` . To print these values we use the format specifiers as `%d`. To get the Decimal integer values we use the `%d` format in `scanf()`. 
-```
+```c
 int val;
 scanf("%d", &val); // input: 32
 printf("%d", val); // prints the decimal value 32
@@ -368,7 +368,7 @@ The Hexadecimal values are one of the integer type values which are having preci
 | e   | 1110   |
 | f   | 1111   |
 
-  ```
+  ```c
   int val;
   printf("%x", val); // prints the Hexadecimal values without the prefix values
   printf("%p", val); // prints the Hexadecimal values with the prefix value
@@ -387,7 +387,7 @@ The octal values are the integer values which are prefixed with `0` and to print
 | 6     | 110    |
 | 7     | 111    |
 
-```
+```c
 int val = 073;
 printf("%o", val); // prints the value in Octal without prefix.
 printf("0%o", val); // prints the value in Octal with prefix.
