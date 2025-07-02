@@ -349,6 +349,7 @@ printf("%d", val); // prints the decimal value 32
 The Hexadecimal values are one of the integer type values which are having preciding or the prefix values as `0x`.To print the values in Hexadecimal we use the `%x` or `%p` which prints the Hexadecimal values. These values are range from `0, 1, 2, 3, 4, 5, 6, 7, 8, a, b, c, d, e, f `. To get the input from the user of a Hexadecimal values we use 
   - `%p` : To get the input from the user in Hexadecimal format with prefix `0x`.
   - `%x` : To get the input from the user in Hexadecimal format without the prefix `0x`.
+    
 | Hex | Binary |
 | --- | ------ |
 | 0   | 0000   |
