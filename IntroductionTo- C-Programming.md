@@ -350,24 +350,24 @@ The Hexadecimal values are one of the integer type values which are having preci
   - `%p` : To get the input from the user in Hexadecimal format with prefix `0x`.
   - `%x` : To get the input from the user in Hexadecimal format without the prefix `0x`.
     
-| Hex | Binary |
-| --- | ------ |
-| 0   | 0000   |
-| 1   | 0001   |
-| 2   | 0010   |
-| 3   | 0011   |
-| 4   | 0100   |
-| 5   | 0101   |
-| 6   | 0110   |
-| 7   | 0111   |
-| 8   | 1000   |
-| 9   | 1001   |
-| a   | 1010   |
-| b   | 1011   |
-| c   | 1100   |
-| d   | 1101   |
-| e   | 1110   |
-| f   | 1111   |
+  | Hex | Binary |
+  | --- | ------ |
+  | 0   | 0000   |
+  | 1   | 0001   |
+  | 2   | 0010   |
+  | 3   | 0011   |
+  | 4   | 0100   |
+  | 5   | 0101   |
+  | 6   | 0110   |
+  | 7   | 0111   |
+  | 8   | 1000   |
+  | 9   | 1001   |
+  | a   | 1010   |
+  | b   | 1011   |
+  | c   | 1100   |
+  | d   | 1101   |
+  | e   | 1110   |
+  | f   | 1111   |
 
   ```c
   int val;
