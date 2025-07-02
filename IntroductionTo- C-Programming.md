@@ -338,14 +338,17 @@ The Integer are the values of numerics and floating point values which can be st
 ## Printing integer values
 
 ### Decimal
-The decimal values are one of the integer types of values which stores the values in decimal and these values starts from `0, 1, 2, 3, 4, ....` . To print these values we use the format specifiers as `%d`.
+The decimal values are one of the integer types of values which stores the values in decimal and these values starts from `0, 1, 2, 3, 4, ....` . To print these values we use the format specifiers as `%d`. To get the Decimal integer values we use the `%d` format in `scanf()`. 
 ```
-int val = 32;
+int val;
+scanf("%d", &val); // input: 32
 printf("%d", val); // prints the decimal value 32
 ```
 
 ### HexaDecimal
-The Hexadecimal values are one of the integer type values which are having preciding or the prefix values as `0x`.To print the values in Hexadecimal we use the `%x` or `%p` which prints the Hexadecimal values. These values are range from `0, 1, 2, 3, 4, 5, 6, 7, 8, a, b, c, d, e, f `.
+The Hexadecimal values are one of the integer type values which are having preciding or the prefix values as `0x`.To print the values in Hexadecimal we use the `%x` or `%p` which prints the Hexadecimal values. These values are range from `0, 1, 2, 3, 4, 5, 6, 7, 8, a, b, c, d, e, f `. To get the input from the user of a Hexadecimal values we use 
+  - `%p` : To get the input from the user in Hexadecimal format with prefix `0x`.
+  - `%x` : To get the input from the user in Hexadecimal format without the prefix `0x`.
 | Hex | Binary |
 | --- | ------ |
 | 0   | 0000   |
@@ -372,7 +375,7 @@ The Hexadecimal values are one of the integer type values which are having preci
   ```
 
 ### Octal
-The octal values are the integer values which are prefixed with `0` and to print the Octal values we use the `%o` and `0%o`. `0, 1, 2, 3, 4, 5, 6, 7`
+The octal values are the integer values which are prefixed with `0` and to print the Octal values we use the `%o` and `0%o`. `0, 1, 2, 3, 4, 5, 6, 7`. To get the Octal values from the user we use the `%o`. 
 | Octal | Binary |
 | ----- | ------ |
 | 0     | 000    |
@@ -389,7 +392,23 @@ int val = 073;
 printf("%o", val); // prints the value in Octal without prefix.
 printf("0%o", val); // prints the value in Octal with prefix.
 ```
+- To take input in any format we can use the common operator taking input in any integer format. `%i` is used to get the input from the user in any format.
+  NOTE : When we use `%i` it's mandatory to use the prefix in the input.
 
+### Floating Points 
+- when we print the floating values in the fractional part we will get **six** Zero's in the fractional part by defualt.
+- we use `%f` to get the values in normal floating points notation.
+- we use `%e` to get the values in exponential notation.
+- we use `%g` to get the values in both the formats i.e, floating point notaion and expinential notation.
+  ```c
+  float f = 234.3;
+  printf(" %f ", f); // o/p : 234.300000
+  printf(" %e ", f); // o/p : 2.343000e+02
+  scanf(" %f ", &f); // i/p : 24.03
+  printf(" %f ", f); // o/p : 24.030000
+  printf(" %e ", f); // o/p : 2.403000e+01
+  ```
+  
 
 
     
