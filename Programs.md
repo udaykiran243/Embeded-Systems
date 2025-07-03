@@ -163,6 +163,148 @@ int main(){
    printf("%s",str);
 }
 ```
+## Implement a function to copy one string into another using pointers, without using any standard library functions.
+```c
+#include<stdio.h>
+int main(){
+    char str[] = "hello";
+    printf("%s", str);
+    char *p = str;
+    printf("%s", p);
+    char p1[6];
+    for(int i = 0; i < 6; i++){
+        *(p1+i) = *(p+i);
+    }
+    printf("%s",p1);
+}
+```
+## Write a program to compare two strings lexicographically (like the strcmp function) using pointers.
+```c
+#include<stdio.h>
+int main(){
+    printf("enter the string :");
+    char str[5];
+    scanf("%s",str); printf("%s", str);
+
+    printf("enter the second string :");
+    char str1[5];
+    scanf("%s", str1);
+
+    char *p = str, *p1 = str1;
+
+    int  i = 0;
+    while(*(p+i) != '\0'){
+        if(*(p+i) == *(p1+i)) i++;
+        else break; 
+    }
+
+    if(*(p+i) == '\0' && *(p1+i)== '\0')  printf("The Strings %s and %s are lexicographically equal", str,str1);
+    else printf("The Strings %s and %s are not lexicographically equal", str ,str1);
+
+}
+```
+## Write a program to find the largest element using Dynamic Memory Allocation.
+```c
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    int *p = (int *)malloc(sizeof(int) * 1);
+    int *p1 = (int *)malloc(sizeof(int) * 1);
+    *p = 5;
+    *p1 = 6;
+    if(*p > *p1) printf("%d is greater than %d", *p, *p1);
+    else printf("%d is greater than %d", *p1, *p);
+}
+```
+## Write a program to show a pointer to an array whose contents are pointers to structures.
+```c
+#include<stdio.h>
+#include<stdlib.h>
+struct ARRAY{
+    int data;
+    char name[100];
+};
+int main(){
+  struct ARRAY p = { 10, "Uday"};  
+  struct ARRAY p2 = { 20, "Sai"};
+  struct ARRAY arr[] = {p,p2};
+  struct ARRAY *ptr = arr;
+  for (int i = 0; i < 2; i++)
+  {
+    printf("Name = %s and Data = %d\n", (ptr+i) -> name , (ptr+i)->data);
+    /* code */
+  }
+    
+}
+```
+## Write a program to add two matrices using pointers.
+```c
+#include <stdio.h>
+
+#define ROW 2
+#define COL 2
+
+int main() {
+    int A[ROW][COL] = {{1, 2}, {3, 4}};
+    int B[ROW][COL] = {{5, 6}, {7, 8}};
+    int C[ROW][COL];
+
+    int *pA = &A[0][0];
+    int *pB = &B[0][0];
+    int *pC = &C[0][0];
+
+    for (int i = 0; i < ROW * COL; i++) {
+        *(pC + i) = *(pA + i) + *(pB + i);
+    }
+
+    // Display result
+    printf("Matrix Addition Result:\n");
+    for (int i = 0; i < ROW; i++) {
+        for (int j = 0; j < COL; j++) {
+            printf("%d ", C[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+## Write a program to multiply two matrix using pointers
+```c
+#include <stdio.h>
+
+#define ROW 2
+#define COL 2
+
+int main() {
+    int A[ROW][COL] = {{1, 2}, {3, 4}};
+    int B[ROW][COL] = {{5, 6}, {7, 8}};
+    int C[ROW][COL] = {0};
+
+    int *pA = &A[0][0];
+    int *pB = &B[0][0];
+    int *pC = &C[0][0];
+
+    for (int i = 0; i < ROW; i++) {
+        for (int j = 0; j < COL; j++) {
+            for (int k = 0; k < COL; k++) {
+                *(pC + i * COL + j) += *(pA + i * COL + k) * *(pB + k * COL + j);
+            }
+        }
+    }
+
+    // Display result
+    printf("Matrix Multiplication Result:\n");
+    for (int i = 0; i < ROW; i++) {
+        for (int j = 0; j < COL; j++) {
+            printf("%d ", C[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
 
 
 
