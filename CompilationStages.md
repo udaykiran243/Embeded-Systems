@@ -54,10 +54,30 @@ Compilation stages are the steps of implementing the compilation of the program 
   ```
 
 - To display the instructions and their corresponding Assembly code we use the ```-S```.
+
+  ```command
+  objdump -S FileName.o
   ```
-  
+- During the compilation we use the following commands
 
+  ```command
+  gcc -S FileName.c
+  ```
 
+## Linker Stage
+- The final stage is linking, performed by the linker.
+- The linker combines one or more object files and necessary library files (e.g., standard C library functions like printf).
+- It resolves all external references, ensuring that calls to functions defined in other object files or libraries are correctly linked to their respective implementations.
+- The result of the linking stage is the final executable file, which can be run directly by the operating system.
+- It combines all the ```.o``` object files to create one executable file ```a.out```.
+- To Combine N no.of ```.c``` files and get one executable file we use the following command
+
+  ```command
+  gcc FileName1.c FileName2.c FileName3.c ...... FileNameN.c
+  ```
+
+- This will gives use the one executable file after compiling all the ```.c``` files.
+- We can also include the FileName in one single program using the preprocessive directives ```#include "FileName.c```.
 
 
 
