@@ -78,7 +78,14 @@ Compilation stages are the steps of implementing the compilation of the program 
 
 - This will gives use the one executable file after compiling all the ```.c``` files.
 - We can also include the FileName in one single program using the preprocessive directives ```#include "FileName.c```.
-
+  <p align = "center">
+    <img src="https://github.com/udaykiran243/Embeded-Systems/blob/c606bac6f5188baabc42b2514a5f314d2ffadfcf/LinkerStage.jpeg" alt="drawing" width="500"/>
+  </p>
+- We use **MAKE FILE AND MAKE UTILITY** to compile multiple files together.
+- Along with all the ```.c``` files we also have the **makefile**, where it consists of commands which are in a specific format.
+- We overcome the large typing statements in the terminal we use this make file and make utitlity which will be used as the fastest way of getting a executable code.
+- With ```make``` command we can do all the compilation of all the ```.c``` files.
+- The ```make``` command will check for the **makefile** and compiles the command which is present in it.
 
 
 
