@@ -410,8 +410,55 @@ printf("0%o", val); // prints the value in Octal with prefix.
   printf(" %f ", f); // o/p : 24.030000
   printf(" %e ", f); // o/p : 2.403000e+01
 ```
-  
 
+## Operators
+Operators are used to do a specific task or used in a expression which will return a single value, Operators are special symbols or keywords used in programming to perform operations on variables and values. They help in tasks like arithmetic calculations, comparisons, logical decisions, and more. For example, the ```+``` operator adds two numbers, ```==``` checks if two values are equal, and ```&&``` performs a logical AND. Operators are categorized into types such as arithmetic, relational, logical, bitwise, assignment, and unary. Each type serves a specific purpose and follows a precedence that determines the order of execution in expressions.
+
+- Arithmetic Operators
+- Relational (Comparison) Operators
+- Logical Operators
+- Bitwise Operators
+- Assignment Operators
+- Unary Operators
+- Ternary Operator
+- Shift Operators
+- Special Operators
+  
+### 1. Arithmetic Operators
+Used to perform basic mathematical operations like addition, subtraction, multiplication, division, and modulus.
+Examples: ```+```, ```-```, ```*```, ```/```, ```%```
+
+### 2. Relational (Comparison) Operators
+Used to compare two values. The result is either true or false.
+Examples: ```==```, ```!=```, ```>```, ```<```, ```>=```, ```<=```
+
+### 3. Logical Operators
+Used to combine multiple conditions and return a boolean result.
+Examples: ```&&``` (AND), ```||``` (OR), ```!``` (NOT)
+
+### 4. Bitwise Operators
+Perform operations on the binary representations of numbers.
+Examples: ```&```, ```|```, ```^```, ```~```, ```<<```, ```>>```
+
+### 5. Assignment Operators
+Used to assign values to variables, with support for compound assignments.
+Examples: ```=```, ```+=```, ```-=```, ```*=```, ```/=```, ```%=```
+
+### 6. Unary Operators
+Operate on a single operand to perform operations like increment, decrement, negation, or logical NOT.
+Examples: ```++```, ```--```, ```-```, ```+``` , ```!```, ```sizeof()``` , sizeof() is a unary operator and a compiler time operator.
+
+### 7. Ternary Operator
+A shorthand way of writing an if-else statement.
+Syntax: condition ```?``` expression1 ```:``` expression2
+
+### 8. Shift Operators
+Used to shift the bits of a number left or right, which effectively multiplies or divides by powers of 2.
+Examples: ```<<``` (left shift), ```>>``` (right shift)
+
+### 9. Special Operators
+These include operators with unique purposes, depending on the language.
+Examples: sizeof (gives size of data type), ```->``` (access structure members), ```&``` (address operator), ```*``` (pointer dereferencing)
 
     
 
