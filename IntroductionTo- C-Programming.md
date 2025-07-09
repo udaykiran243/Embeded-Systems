@@ -427,14 +427,40 @@ Operators are used to do a specific task or used in a expression which will retu
 ### 1. Arithmetic Operators
 Used to perform basic mathematical operations like addition, subtraction, multiplication, division, and modulus.
 Examples: ```+```, ```-```, ```*```, ```/```, ```%```
+The Arithmetic operators are used for the expressions like doing a Arithmetic operations. Ex : ```int x = 10 * 20 / 2;```
+
+```c
+int main(){
+  int a = 10;
+  printf("%d", a+2); // prints a + 2 = 10 + 2 = 12
+}
+```
 
 ### 2. Relational (Comparison) Operators
 Used to compare two values. The result is either true or false.
 Examples: ```==```, ```!=```, ```>```, ```<```, ```>=```, ```<=```
+These Operators are used in the **Control Flow** statements which are used for the jumping from one statement to another statement and these are also used for the conditions in the control flow statements like ```if```, ```if..else```,  ```switch()```.
+
+```c
+int main(){
+  int a = 10;
+  if(a > 6)
+    printf(" This is a conditional statement which uses the relational operators" );
+}
+```
 
 ### 3. Logical Operators
 Used to combine multiple conditions and return a boolean result.
 Examples: ```&&``` (AND), ```||``` (OR), ```!``` (NOT)
+These operators are used for checking multiple conditions which can be of both relational and logical operators in the **Control flow** statements.
+
+```c
+int main(){
+  int a = 10;
+  if((a > 6) && (a != 0))
+    printf(" This is a conditional statement which uses the relational operators and logical operators" );
+}
+```
 
 ### 4. Bitwise Operators
 Perform operations on the binary representations of numbers.
