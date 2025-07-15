@@ -388,11 +388,13 @@ The octal values are the integer values which are prefixed with `0` and to print
 | 6     | 110    |
 | 7     | 111    |
 
+
 ```c
 int val = 073;
 printf("%o", val); // prints the value in Octal without prefix.
 printf("0%o", val); // prints the value in Octal with prefix.
 ```
+
 - To take input in any format we can use the common operator taking input in any integer format. `%i` is used to get the input from the user in any format.
   NOTE : When we use `%i` it's mandatory to use the prefix in the input.
 
@@ -401,6 +403,7 @@ printf("0%o", val); // prints the value in Octal with prefix.
 - we use `%f` to get the values in normal floating points notation.
 - we use `%e` to get the values in exponential notation.
 - we use `%g` to get the values in both the formats i.e, floating point notaion and expinential notation.
+  
   
 ```c
   float f = 234.3;
