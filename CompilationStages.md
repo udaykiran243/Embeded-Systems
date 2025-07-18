@@ -1,9 +1,13 @@
 # Compilation Stages
 Compilation stages are the steps of implementing the compilation of the program where the program creates a executable file. The compilation of a C program involves a series of stages, transforming human-readable source code into an executable file. These stages are:
-- **Preprocessing Stage**
-- **Compilation Stage**
-- **Assembler Stage**
-- **linker Stage**
+- **Preprocessing Stage** : The preprocessor handles directives like ```#include``` and ```#define```. It replaces macros, removes comments, and expands included files. The output is preprocessed code, essentially a modified version of the original source code.
+
+- **Compilation Stage** : The compiler translates the preprocessed code into assembly language. This stage involves syntax and semantic analysis, generating machine-level instructions tailored to the target processor architecture. The output is assembly code, a human-readable representation of machine instructions.
+
+- **Assembler Stage** : The assembler takes the assembly code and converts it into object code. Object code is machine code, but it might contain unresolved references to external functions or variables. This stage produces a file containing the binary representation of the code.
+
+- **linker Stage** : The linker combines the object code with necessary libraries and resolves any remaining external references. This creates the final executable file, which is a complete set of machine instructions that can be directly executed by the computer.
+
 
 ## Preprocessing Stage
 - This is the first stage where the preprocessor handles directives indicated by # (e.g., #include, #define, #ifdef). Comments are removed.
